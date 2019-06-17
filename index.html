@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> | Trivia Crunch | &trade; </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/he/1.2.0/he.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- dropdown -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="img/intellectual.png" sizes="32x32" type="image/png"> 
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+    <div class="allwrap">
+            <div class="header">
+                 <h1>| Trivia Crunch | &trade;</h1> 
+                <br>
+                <p>a minimalist trivia app.</p>
+                
+                </div>
+            <div class="body">
+                        <h1 class="choose">Choose.</h1>
+                        <p class="label">26</p>
+                        <input class="numQuestions" type="range" min="1" max="50" step="1">
+                      
+                        <select class="dropdownCategory">
+                                <!-- <option selected="x" hidden> Choose Category</option> -->
+                                <option value="x">Any Category</option>
+                                <option value="9">General Knowledge</option>
+                                <option value="10">Entertainment: Books</option>
+                                <option value="11">Entertainment: Film</option>
+                                <option value="12">Entertainment: Music</option>
+                                <option value="13">Entertainment: Musicals & Theatres</option>
+                                <option value="14">Entertainment: Television</option> 
+                                <option value="15">Entertainment: Video Games</option>
+                                <option value="16">Entertainment: Board Games</option>
+                                <option value="17">Science & Nature</option>
+                                <option value="18">Science: Computers</option>
+                                <option value="19">Science: Mathematics</option>
+                                <option value="20">Mythology</option>
+                                <option value="21">Sports</option>
+                                <option value="22">Geography</option>
+                                <option value="23">History</option>
+                                <option value="24">Politics</option>
+                                <option value="25">Art</option>
+                                <option value="26">Celebrities</option>
+                                <option value="27">Animals</option>
+                                <option value="28">Vehicles</option>
+                                <option value="29">Entertainment: Comics</option>
+                                <option value="30">Science: Gadgets</option>
+                                <option value="31">Entertainment: Japanese Anime and Manga</option>
+                                <option value="32">Entertainment: Cartoons and Animations</option>
+                              </select>
+                        <div class="space"></div>
+                        <br>
+                        <select class="dropdownDifficulty">
+                            <option value="x">Any Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                        <div class="space"></div>
+                        <br>
+                        <select class="dropdownType">
+                                <option value="x">Any Type</option>
+                                <option value="multiple">Multiple Choice</option>
+                                <option value="boolean">True/False</option>
+                            </select>
+                        <div class="space"></div>
+                        <br>
+                        <button class="button" href="#">ENTER</button>           
+            </div>
+            <div class="mainGame hide">
+                    <img class="showIcon" src="#" alt="">
+                    <h4 class="showCategory"> # <span> | | </span> <span class="showDifficulty">---</span></h4>
+                    <h1 class="showQuestion">#</h1>
+                    <div class="showChoices" id="0">#</div>
+                    <div class="showChoices" id="1">#</div>
+                    <div class="showChoices" id="2">#</div>
+                    <div class="showChoices" id="3">#</div>
+                    <div class="showNext hide">Next Question -> </div>
+                    <div class="restart hide">Start a New Game.</div>
+                </div>
+            </div>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
+        

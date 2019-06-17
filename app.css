@@ -1,0 +1,276 @@
+body{
+    color: #37474F;
+    box-sizing: border-box;
+       
+   
+}
+
+.allwrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.header{
+    color: #212629;
+    font-family: 'Fjalla One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* border: 5px solid black; */
+    flex-basis: 100%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.header h1{
+    font-size: 40px;
+}
+.header p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.body{
+    display: inline-flex;
+    align-content: center;
+    height: auto;
+    padding:70px 20px;
+    border: 15px solid  #37474F;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 360px;
+    border-radius: 25px;
+    color: #37474F;
+    /* box-shadow: 15px 30px 18px;  */
+}
+
+.body input{
+    width: 70%;
+    min-height: 20px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    
+    
+}
+    .choose{
+        flex-basis: 100%;
+        margin-top: -10px;
+    }
+    .label{
+        color:#37474F;
+        flex-basis: 10%;
+        margin-left: 11px;
+    
+      margin-top: 20px;   
+      
+    }
+    .dropdownCategory{
+        flex-basis: 100%;
+    }
+    .dropdownDifficulty{
+        flex-basis: 100%;
+    }
+    .dropdownType{
+        flex-basis: 100%;
+    }
+    .space{
+        flex-basis: 100%;
+    }
+    /*input style from css tricks, with some tweaks */
+     input[type=range] { 
+        -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+        width: 40%; /* Specific width is required for Firefox. */
+        background: transparent; /* Otherwise white in Chrome */
+        flex-basis: 85%;
+    }
+    
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+        
+        input[type=range]:focus {
+            outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+        }
+        
+        input[type=range]::-ms-track {
+            width: 100%;
+            cursor: pointer;
+        
+            /* Hides the slider so custom styles can be added */
+            background: transparent; 
+            border-color: transparent;
+            color: transparent;
+        }
+            /* Special styling for WebKit/Blink */
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: 1px solid #000000;
+            height: 36px;
+            width: 16px;
+            border-radius: 3px;
+            background: #ffffff;
+            cursor: pointer;
+            margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+        }
+        
+        /* All the same stuff for Firefox */
+        input[type=range]::-moz-range-thumb {
+            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+            border: 1px solid #000000;
+            height: 36px;
+            width: 16px;
+            border-radius: 3px;
+            background: #ffffff;
+            cursor: pointer;
+        }
+        
+        /* All the same stuff for IE */
+        input[type=range]::-ms-thumb {
+            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+            border: 1px solid #000000;
+            height: 36px;
+            width: 16px;
+            border-radius: 3px;
+            background: #ffffff;
+            cursor: pointer;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 8.4px;
+            cursor: pointer;
+            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+            background: #37474F;
+            border-radius: 1.3px;
+            border: 0.2px solid #010101;
+          }
+          
+          input[type=range]:focus::-webkit-slider-runnable-track {
+            background: #37474F;
+          }
+          
+          input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 8.4px;
+            cursor: pointer;
+            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+            background: #37474F;
+            border-radius: 1.3px;
+            border: 0.2px solid #010101;
+          }
+          
+          input[type=range]::-ms-track {
+            width: 100%;
+            height: 8.4px;
+            cursor: pointer;
+            background: transparent;
+            border-color: transparent;
+            border-width: 16px 0;
+            color: transparent;
+          }
+          input[type=range]::-ms-fill-lower {
+            background: #37474F;
+            border: 0.2px solid #010101;
+            border-radius: 2.6px;
+            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          }
+          input[type=range]:focus::-ms-fill-lower {
+            background: #37474F;
+          }
+          input[type=range]::-ms-fill-upper {
+            background: #37474F;
+            border: 0.2px solid #010101;
+            border-radius: 2.6px;
+            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          }
+          input[type=range]:focus::-ms-fill-upper {
+            background: #37474F;
+          }
+          
+
+.body button{
+    background: #37474F;
+    border:  #37474F;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    height: auto;
+    width: auto;
+    padding: 6px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+    flex-basis: 100%;
+}
+
+
+.mainGame{
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    padding:70px 20px;
+    border: 15px solid  #37474F;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 360px;
+    border-radius: 25px;
+    color: #37474F;
+    /* box-shadow: 15px 30px 18px;  */
+}
+.showChoices{
+    flex-basis: 40%;
+    border: 5px solid #37474F;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.showChoices:hover{
+    background-color: #37474F;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 5px solid #37474F;
+    padding: 10px;
+}
+.showIcon{
+    width: 200px;
+    height: 200px;
+    filter: invert(24%) sepia(3%) saturate(4500%) hue-rotate(156deg) brightness(90%) contrast(81%);
+}
+.showCategory{
+    flex-basis: 100%;
+}
+.showQuestion{
+    flex-basis: 100%;
+}
+.showNext{
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+
+.showNext:hover{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.restart{
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+.restart:hover{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.hide{
+    display: none;
+}
+.flex{
+    display: flex;
+}
